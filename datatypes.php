@@ -8,17 +8,17 @@
 <body>
     <?php
     //String
-    $name = 'Coding is fun';
+    $name = 'yerppity';
 
     //Integer
-    $name = 20;
+    $name = 300;
 
     //Float
-    $name = 20.5784;
+    $name = 300.576;
 
     /*Boolean
-    true = 1
-    false = 0*/
+    true = 9;
+    false = 10;*/
 
     //Array
     $names = array("Daniel","Dennis","Michael");
