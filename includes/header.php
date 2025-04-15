@@ -1,3 +1,7 @@
+<?php
+ session_start();
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -43,7 +47,20 @@
         <li class="nav-item">
           <a class="nav-link" href="functions.php">Functions</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="superglobals.php">Superglobals</a>
+        </li>
       </ul>
     </div>
   </div>
-</nav>
+</nav> 
+<?php
+$_SESSION['username'] = "WillBechtol07";
+echo $_SESSION['username'];
+
+if (!isset($_SESSION['username'])) {
+  echo "You Are Not Logged In";
+} else{
+  echo " You Are Logged In";
+}
+?>
