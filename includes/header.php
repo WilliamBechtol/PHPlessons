@@ -1,8 +1,6 @@
 <?php
- session_start();
- include_once 'includes\dbh.inc.php';
+  include_once 'dbh.inc.php';
 ?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -50,6 +48,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="superglobals.php">Superglobals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.php">signup</a>
         </li>
       </ul>
     </div>
