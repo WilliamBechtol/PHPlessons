@@ -1,5 +1,5 @@
 <?php
-  include 'C:\xampp\htdocs\PHPlessons\includes\header.php';
+  require "includes\header.php";
 ?>
 <?php
 
@@ -9,5 +9,5 @@
 
 ?>
 <?php
- require "footer.php";
+ require "includes/footer.php";
 ?>

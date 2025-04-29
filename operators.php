@@ -1,5 +1,5 @@
 <?php
-  include 'C:\xampp\htdocs\PHPlessons\includes\header.php';
+  require "includes\header.php";
 ?>
     <?php
     //Arithmetic Operators
@@ -106,5 +106,5 @@
     }
     ?>
 <?php
- require "footer.php";
+ require "includes/footer.php";
 ?>

@@ -1,8 +1,17 @@
 <?php
-    include "header.php";
+  require "includes\header.php";
 ?>
 <main>
     <h1>Signup</h1>
+    <?php
+        if (isset($_GET['error'])) {
+            if ($_GET['error'] == "emptyfields") {
+                echo '<p> Fill in All Fields!</p>';
+
+            }
+        }
+        else if (($_GET['error']))
+    ?>
 <form action="includes/signup.inc.php" method="POST">
     <input type="text" name="Username" placeholder="Username">
     <br>
@@ -12,5 +21,5 @@
 </form>
 </main>
 <?php
-    require "footer.php";
+ require "includes/footer.php";
 ?>

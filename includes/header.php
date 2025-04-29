@@ -1,4 +1,7 @@
 <?php
+  session_start();
+?>
+<?php
   include_once "includes/dbh.inc.php";
 ?>
 <!doctype html>
@@ -49,16 +52,13 @@
         <li class="nav-item">
           <a class="nav-link" href="superglobals.php">Superglobals</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.php">signup</a>
-        </li>
       </ul>
       <form action="includes/login.inc.php" method="post">
-        <input type="text" name="mailuid" placeholder="Username/E-mail...">
+        <input type="text" name="username" placeholder="Username">
         <input type="password" name="pwd" placeholder="Password">
         <button type="submit" name="login-submit">Login</button>
       </form>
-      <a href="signup.php">Signup</a>
+      <button><a href="signup.php">Signup</a></button>
       <form action="includes/logout.inc.php" method="post">
         <button type="submit" name="logout-submit">Logout</button>
       </form>
@@ -66,12 +66,3 @@
   </div>
 </nav> 
 <?php
-$_SESSION['username'] = "WillBechtol07";
-echo $_SESSION['username'];
-
-if (!isset($_SESSION['username'])) {
-  echo "You Are Not Logged In";
-} else{
-  echo " You Are Logged In";
-}
-?>

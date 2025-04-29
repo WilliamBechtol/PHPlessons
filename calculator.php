@@ -1,5 +1,5 @@
 <?php
-  include 'C:\xampp\htdocs\PHPlessons\includes\header.php';
+  require "includes\header.php";
 ?>
     <form action="">
         <input type="text" name="num1" placeholder="Number 1">
@@ -40,5 +40,5 @@
     }
     ?>
 <?php
- require "footer.php";
+ require "includes/footer.php";
 ?>

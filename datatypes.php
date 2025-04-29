@@ -1,5 +1,5 @@
 <?php
-  include 'C:\xampp\htdocs\PHPlessons\includes\header.php';
+  require "includes\header.php";
 ?>
     <?php
     //String
@@ -20,5 +20,5 @@
     echo $names['2']
     ?>
 <?php
- require "footer.php";
+ require "includes/footer.php";
 ?>

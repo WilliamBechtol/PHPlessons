@@ -1,5 +1,5 @@
 <?php
-  include 'C:\xampp\htdocs\PHPlessons\includes\header.php';
+  require "includes\header.php";
 ?>
     //While loop
     $x = 1;
@@ -27,5 +27,5 @@
 ?>
 
 <?php
- require "footer.php";
+ require "includes/footer.php";
 ?>

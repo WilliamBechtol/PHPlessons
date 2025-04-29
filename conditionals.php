@@ -1,5 +1,5 @@
 <?php
-  include 'C:\xampp\htdocs\PHPlessons\includes\header.php';
+  require "includes\header.php";
 ?>
     <?php
     $x = 1;
@@ -40,6 +40,6 @@
             echo "There is no answer";
     }
     ?>
- <?php
- require "footer.php";
+<?php
+ require "includes/footer.php";
 ?>
