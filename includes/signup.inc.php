@@ -3,8 +3,8 @@
 
     require 'dbh.inc.php';
 
-    $username = $_POST['Username'];
-    $password = $_POST['Password'];
+    $username = $_POST['username'];
+    $password = $_POST['pwd'];
   }
     if (empty($username) || empty($password)) {
       header("Location: ../signup.php?error=emptyfields&".$username);
