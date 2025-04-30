@@ -10,7 +10,7 @@
 
             }
         }
-        else if (($_GET['error']))
+        else if (($_GET['signup']== 'Success'))
     ?>
 <form action="includes/signup.inc.php" method="POST">
     <input type="text" name="Username" placeholder="Username">

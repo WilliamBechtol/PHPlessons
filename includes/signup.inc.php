@@ -11,7 +11,7 @@
       exit();
     }
     else if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-    header("Location: ../signup.php?error=invalidusername&Mail=");
+    header("Location: ../signup.php?error=invalidusername=");
     exit();
   }
     else {

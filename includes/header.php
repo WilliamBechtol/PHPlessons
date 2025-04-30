@@ -2,7 +2,7 @@
   session_start();
 ?>
 <?php
-  include_once "includes/dbh.inc.php";
+  require "dbh.inc.php";
 ?>
 <!doctype html>
 <html lang="en">
