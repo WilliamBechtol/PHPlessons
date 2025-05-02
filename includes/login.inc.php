@@ -9,6 +9,7 @@ if (isset($_POST['login-submit'])) {
 
     if (empty($username) || empty($password)) {
         header("Location: ../index.php?error=emptyfields");
+        echo "<p>Fill in All Fields!</p>";
         exit();
     } else {
         $sql = "SELECT * FROM users WHERE username=?;";
